@@ -1,4 +1,4 @@
-@Library('my-shared-library') _
+@Library('shared-lib') _
 
 pipeline{
 
@@ -13,6 +13,7 @@ pipeline{
                 branch: "main"
                 url: "https://github.com/ahmedgithub-node1/secondjob52123.git"
             }
-        }
-    }    
-}
+            }
+        } 
+    }
+}           
