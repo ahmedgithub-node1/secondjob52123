@@ -10,8 +10,8 @@ pipeline{
 
             steps{
             gitCheckout{
-                branch: "main"
-                url: "https://github.com/ahmedgithub-node1/secondjob52123.git"
+               branch: "main"
+               url: "https://github.com/ahmedgithub-node1/secondjob52123.git"
             }
             }
         }
