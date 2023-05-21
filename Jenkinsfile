@@ -1,3 +1,5 @@
+@Library('my-shread-library') _
+
 pipeline{
 
     agent any
