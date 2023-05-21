@@ -2,15 +2,15 @@ pipeline{
 
     agent any
 
-    stage{
+    stages{
 
         statge('Git Checkout'){
 
             steps{
 
-                scrips{
+                script{
 
-                    git 'https://github.com/ahmedgithub-node1/MyKubernetes.git '
+                    git branch: 'main', url: 'https://github.com/ahmedgithub-node1/secondjob52123.git'
                 }
             }
 
