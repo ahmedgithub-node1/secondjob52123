@@ -1,12 +1,12 @@
-pipeline {
+pipeline{
 
     agent any
 
-    stage {
+    stage{
 
-        statge('Git Checkout') {
+        statge('Git Checkout'){
 
-            steps {
+            steps{
 
                 script{
 
