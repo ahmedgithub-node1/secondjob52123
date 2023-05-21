@@ -11,7 +11,7 @@ pipeline{
                 script{
 
                     gitCheckout
-                      branch: "main",
+                      branch: "main"
                       url: "https://github.com/ahmedgithub-node1/secondjob52123.git"
                     }
                 }
