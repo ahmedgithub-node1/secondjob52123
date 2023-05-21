@@ -4,7 +4,7 @@ pipeline{
 
     stages{
 
-        statge{'Git Checkout'}{
+        stage{'Git Checkout'}{
 
             steps{
 
