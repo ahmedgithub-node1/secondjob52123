@@ -1,4 +1,4 @@
-@Library('my-shread-library') _
+@Library('my-shared-library') ~ 
 
 pipeline{
 
