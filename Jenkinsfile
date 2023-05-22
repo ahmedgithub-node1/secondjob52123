@@ -9,8 +9,8 @@ pipeline{
         stage('Git Checkout'){
 
             steps{
-            gitCheckout{
                 script{
+            gitCheckout{
                 branch: "main"
                 url: "https://github.com/ahmedgithub-node1/secondjob52123.git"
             }    
