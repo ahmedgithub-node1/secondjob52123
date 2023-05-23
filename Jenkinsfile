@@ -1,17 +1,17 @@
 @Library('shared-lib') _
 
-pipeline{
+pipeline {
 
     agent any
 
-    stages{
+    stages {
 
-        stage('Git Checkout'){
+        stage('Git Checkout') {
 
-            steps{
-            gitCheckout{
-                branch: 'main'
-                url: 'https://github.com/ahmedgithub-node1/secondjob52123.git'
+            steps {
+            gitCheckout {
+                branch: "main"
+                url: "https://github.com/ahmedgithub-node1/secondjob52123.git"
             }    
         }
     }
