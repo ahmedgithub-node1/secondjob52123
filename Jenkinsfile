@@ -1,4 +1,4 @@
-@Library('shared-lib') _
+@Library("shared-lib") _
 
 pipeline {
 
@@ -6,7 +6,7 @@ pipeline {
 
     stages {
 
-        stage('Git Checkout') {
+        stage("Git Checkout") {
 
             steps {
             gitCheckout {
