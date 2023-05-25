@@ -6,7 +6,7 @@ pipeline{
 
     parameters{
 
-        choice(name: 'action', choice: 'create\ndelete', description: 'Choose create\Destroy')
+        choice(name: 'action', choice: 'create\ndelete', description: 'Choose create/Destroy')
     }
 
     stages{
