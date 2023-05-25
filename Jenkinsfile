@@ -22,7 +22,7 @@ pipeline{
         }
          stage('Unit Test maven'){
 
-            when { expresion { param.action == 'create'
+            when { expresion { params.action == 'create'
             
             steps{
                 script{
@@ -32,7 +32,7 @@ pipeline{
             }
         }
          stage('Integration Test maven'){
-         when { expresion { param.action == 'create'
+         when { expresion { params.action == 'create'
             steps{
                 script{
 
@@ -41,7 +41,7 @@ pipeline{
             
             }
          stage('Static code analyses: Sonarqube'){
-         when { expresion { param.action == 'create'
+         when { expresion { params.action == 'create'
             steps{
                 script{
 
