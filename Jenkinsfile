@@ -6,15 +6,13 @@ pipeline{
 
     parameters{
 
-        choice(name: 'action', choice: 'create\ndelete', description: 'choose create\destroy' )
+        choice(name: 'action', choice: 'create\ndelete', description: 'Choose create\Destroy')
     }
 
     stages{
 
-        when { expresion { param.action == 'create'
-        } }
         stage('Git Checkout'){
-
+                    when { expresion { param.action == 'create' }}
             steps{
             gitCheckout(
                 branch: "main",
