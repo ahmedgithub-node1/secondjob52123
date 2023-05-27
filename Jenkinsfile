@@ -46,8 +46,7 @@ pipeline{
                 scripts{
 
                     statiCodeAnalyses()
-                }
-            
-            }
+            }   }
         }
     }
+}
