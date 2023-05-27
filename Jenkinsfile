@@ -40,7 +40,7 @@ pipeline{
                }
             }     
         }
-        stage('Static code analyses: Sonarqube'){
+        stage('Static code analyses: Sonarqube1'){
          when { expression { params.action == 'create' } }
             steps{
                 script{
