@@ -41,12 +41,13 @@ pipeline{
             }     
         }
          stage('Static code analyses: Sonarqube'){
-         when { expresion { params.action == 'create'
+         when { expression { params.action == 'create'
             steps{
                 scripts{
 
                     statiCodeAnalyses()
-            }   }
+               }
+            }   
         }
     }
 }
