@@ -25,7 +25,7 @@ pipeline{
          when { expression { params.action == 'create' } }
             
             steps{
-                script{
+               script{
 
                     mvnTest()
                 }
@@ -37,11 +37,11 @@ pipeline{
                 script{
 
                     mvnintegrationtesting()
-                }
+               }
             }     
         }
          stage('Static code analyses: Sonarqube'){
-         when { expression { params.action == 'create'
+         when { expression { params.action == 'create' } }
             steps{
                 scripts{
 
