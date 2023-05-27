@@ -28,7 +28,7 @@ pipeline{
                script{
 
                     mvnTest()
-                }
+               }
             }
         }
          stage('Integration Test maven'){
@@ -40,7 +40,7 @@ pipeline{
                }
             }     
         }
-         stage('Static code analyses: Sonarqube'){
+        stage('Static code analyses: Sonarqube'){
          when { expression { params.action == 'create' } }
             steps{
                 script{
